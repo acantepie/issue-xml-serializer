@@ -35,11 +35,6 @@ class IssueCommand extends Command
             '<foo>foo</foo>',
         ];
 
-        $foo = new Foo();
-        $foo->dummy = 'a';
-        $foo->content = 'oo';
-
-
         foreach ($data as $s) {
             $io->title($s);
 
