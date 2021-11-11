@@ -29,9 +29,9 @@ class IssueCommand extends Command
         $io = new SymfonyStyle($input, $output);
 
         $data = [
-            '<foo dummy="dummy">foo</foo>',
-            '<foo dummy="dummy"><![CDATA[foo]]></foo>',
-            '<foo dummy="dummy"><![CDATA[foo]]>bar</foo>',
+            '<foo dummy="dummi">foo</foo>',
+            '<foo dummy="dummi"><![CDATA[foo]]></foo>',
+            '<foo dummy="dummi"><![CDATA[foo]]>bar</foo>',
             '<foo>foo</foo>',
         ];
 
