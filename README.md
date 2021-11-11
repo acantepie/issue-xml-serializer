@@ -1,4 +1,4 @@
-# Showcase app for symfony/serializer issue
+# Example app for symfony/serializer issue
 
 Related issues :
 - https://github.com/symfony/symfony/issues/43977 (c-data)
