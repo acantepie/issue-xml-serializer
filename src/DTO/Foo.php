@@ -13,7 +13,7 @@ use Symfony\Component\Serializer\Annotation\SerializedName;
 class Foo
 {
     # Sf annotation
-    #[SerializedName("@dummmy")]
+    #[SerializedName("@dummy")]
 
     # Jms annotation
     #[Type("string")]

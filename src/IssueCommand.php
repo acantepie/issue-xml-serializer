@@ -29,10 +29,10 @@ class IssueCommand extends Command
         $io = new SymfonyStyle($input, $output);
 
         $data = [
-            '<foo dummy="dummi">foo</foo>',
-            '<foo dummy="dummi"><![CDATA[foo]]></foo>',
-            '<foo dummy="dummi"><![CDATA[foo]]>bar</foo>',
-            '<foo>foo</foo>',
+            '<foo dummy="dummy">foo</foo>', // ok
+            '<foo dummy="dummy"><![CDATA[foo]]></foo>', // ok
+            '<foo dummy="dummy"><![CDATA[foo]]>bar</foo>', // @see issue https://github.com/symfony/symfony/issues/43977
+            '<foo>foo</foo>', // @see issue https://github.com/symfony/symfony/issues/43925
         ];
 
         foreach ($data as $s) {
